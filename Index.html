@@ -4,27 +4,149 @@
     <meta charset="UTF-8">
     <title>Revanth Tungala | Portfolio</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
+
+    <style>
+
+        /* Basic Reset */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f2f2f2;
+        }
+
+        /* Header */
+        header {
+            background-color: #222;
+            color: white;
+            text-align: center;
+            padding: 20px 0;
+        }
+
+        nav {
+            margin-top: 10px;
+            display: flex;
+            justify-content: center;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 0 15px;
+            font-weight: bold;
+        }
+
+        nav a:hover {
+            color: lightblue;
+        }
+
+        /* Sections */
+        section {
+            background-color: white;
+            width: 80%;
+            margin: 20px auto;
+            padding: 20px;
+            border-radius: 5px;
+        }
+
+        h2 {
+            margin-bottom: 10px;
+            border-bottom: 2px solid #333;
+            padding-bottom: 5px;
+        }
+
+        /* Skills Section */
+        .skills-grid {
+            display: flex;
+            justify-content: space-between;
+            margin-top: 10px;
+        }
+
+        .skills-grid article {
+            width: 45%;
+        }
+
+        /* Projects Section */
+        .projects-grid {
+            display: flex;
+            justify-content: space-between;
+            margin-top: 10px;
+        }
+
+        .projects-grid article {
+            width: 48%;
+            background-color: #f9f9f9;
+            padding: 15px;
+            border-radius: 5px;
+        }
+
+        /* Contact */
+        #contact a {
+            color: blue;
+            text-decoration: none;
+        }
+
+        /* Footer */
+        footer {
+            background-color: #222;
+            color: white;
+            text-align: center;
+            padding: 15px 0;
+            margin-top: 20px;
+        }
+
+        /* Responsive */
+        @media (max-width: 768px) {
+
+            nav {
+                flex-direction: column;
+            }
+
+            nav a {
+                margin: 8px 0;
+            }
+
+            .skills-grid {
+                flex-direction: column;
+            }
+
+            .skills-grid article {
+                width: 100%;
+                margin-bottom: 15px;
+            }
+
+            .projects-grid {
+                flex-direction: column;
+            }
+
+            .projects-grid article {
+                width: 100%;
+                margin-bottom: 15px;
+            }
+
+        }
+
+    </style>
 </head>
 
 <body>
 
-    <!-- HEADER SECTION -->
     <header>
         <h1>Revanth Tungala</h1>
         <p>Aspiring Full Stack Developer</p>
 
         <nav>
-            <a href="#about">About</a> |
-            <a href="#skills">Skills</a> |
-            <a href="#projects">Projects</a> |
+            <a href="#about">About</a>
+            <a href="#skills">Skills</a>
+            <a href="#projects">Projects</a>
             <a href="#contact">Contact</a>
         </nav>
-        <hr>
     </header>
 
-
-    <!-- ABOUT SECTION -->
     <section id="about">
         <h2>About Me</h2>
         <p>
@@ -34,67 +156,56 @@
         </p>
     </section>
 
-    <hr>
-
-    <!-- SKILLS SECTION -->
     <section id="skills">
         <h2>Skills</h2>
+        <div class="skills-grid">
+            <article>
+                <h3>Programming Languages</h3>
+                <ul>
+                    <li>Java</li>
+                    <li>JavaScript (Basics)</li>
+                    <li>SQL</li>
+                </ul>
+            </article>
 
-        <article>
-            <h3>Programming Languages</h3>
-            <ul>
-                <li>Java</li>
-                <li>JavaScript (Basics)</li>
-                <li>SQL</li>
-            </ul>
-        </article>
-
-        <article>
-            <h3>Frameworks & Tools</h3>
-            <ul>
-                <li>Spring Boot</li>
-                <li>Git & GitHub</li>
-                <li>VS Code</li>
-            </ul>
-        </article>
+            <article>
+                <h3>Frameworks & Tools</h3>
+                <ul>
+                    <li>Spring Boot</li>
+                    <li>Git & GitHub</li>
+                    <li>VS Code</li>
+                </ul>
+            </article>
+        </div>
     </section>
 
-    <hr>
-
-    <!-- PROJECTS SECTION -->
+    
     <section id="projects">
         <h2>Projects</h2>
+        <div class="projects-grid">
+            <article>
+                <h3>Employee Management System</h3>
+                <p>
+                    Backend application built using Spring Boot and MySQL with role-based access control.
+                </p>
+            </article>
 
-        <article>
-            <h3>Employee Management System</h3>
-            <p>
-                A backend application built using Spring Boot and MySQL.
-                Implemented role-based access control (Admin, Manager, Employee).
-            </p>
-        </article>
-
-        <article>
-            <h3>Community Event Portal</h3>
-            <p>
-                A web-based platform to manage community events.
-                Includes JavaScript validation and interactive UI components.
-            </p>
-        </article>
-
+            <article>
+                <h3>Community Event Portal</h3>
+                <p>
+                    Web-based platform to manage community events with JavaScript interactions.
+                </p>
+            </article>
+        </div>
     </section>
 
-        <hr>
-
-    <!-- CONTACT SECTION -->
     <section id="contact">
         <h2>Contact</h2>
         <p>Email: revanth@example.com</p>
-        <p>GitHub: <a href="https://github.com/revanth">revanth</a></p>
+        <p>GitHub: <a href="https://github.com/revanth" target="_blank">revanth</a></p>
     </section>
-    
-    <!-- FOOTER -->
+
     <footer>
-        <hr>
         <p>© 2026 Revanth Tungala | All Rights Reserved</p>
     </footer>
 
